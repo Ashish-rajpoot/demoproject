@@ -1,40 +1,15 @@
-import AvtarPage from "./AvtarPage";
 import CardPage from "./CardPage";
-import MenuLinks from "./MenuLinks";
+import NavPage from "./NavPage";
 import RoutePage from "./RoutePage";
 
 const HomePage = () => {
   return (
-    <div>
-      <div className="menu-bar justify-between flex bg-gray-100 py-2 items-center px-2 rounded-md">
-        <MenuLinks />
-        <AvtarPage />
+    <div className="relative">
+      <div>
+        <NavPage />
       </div>
-      <RoutePage />
-      <div className="breadcrum">Bradcrum</div>
-      <div className="grid grid-cols-4 gap-4">
-        <CardPage />
-        <CardPage />
-        <CardPage />
-        <CardPage />
-        <CardPage />
-        <CardPage />
-        <CardPage />
-        <CardPage />
-        <CardPage />
-        <CardPage />
-        <CardPage />
-        <CardPage />
-        <CardPage />
-        <CardPage />
-        <CardPage />
-        <CardPage />
-        <CardPage />
-        <CardPage />
-        <CardPage />
-        <CardPage />
-        <CardPage />
-        <CardPage />
+      <div className="flex justify-center items-center h-[80vh]">
+        <RoutePage />
       </div>
     </div>
   );
