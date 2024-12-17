@@ -140,13 +140,3 @@ ReferenceError: require is not defined
 ### Solution is 
 import tailwindAnimate from 'tailwindcss-animate'
   plugins: [tailwindAnimate],
-
-
-
-  npm install gh-pages --save-dev
-
-   "homepage": "https://(github username).github.io/(repo name)",
-
-   ,
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
