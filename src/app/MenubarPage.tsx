@@ -10,20 +10,21 @@ import { MenubarPageProps } from "@/interface/MenubarPageProps.interface";
 import { Link } from "react-router-dom";
 
 const MenubarPage: React.FC<MenubarPageProps> = ({ Item }) => {
+  console.log(Item);
   return (
     <Menubar>
       <MenubarMenu>
         <MenubarTrigger className="cursor-pointer">{Item.title}</MenubarTrigger>
         <MenubarContent>
-          <MenubarItem>
-            <Link to={"/demoproject/"}>
+          {/* <MenubarItem>
+            <Link to={"/"}>
               {Item.subLinks?.title} <MenubarShortcut>⌘T</MenubarShortcut>
             </Link>
-          </MenubarItem>
+          </MenubarItem> */}
           {Item.subLinks?.links?.map((link, i) => (
             <div key={i}>
-              <Link to={`/demoproject/${link}`}>
-              <MenubarItem>{link}</MenubarItem>
+              <Link to={`/${link.url}`}>
+              <MenubarItem>{link.title}</MenubarItem>
               </Link>
               {/* <MenubarSeparator /> */}
             </div>

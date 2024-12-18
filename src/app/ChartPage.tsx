@@ -12,14 +12,14 @@ const ChartPage = () => {
           <Bar dataKey="mobile" fill="var(--color-mobile)" radius={4} />
         </BarChart>
       </ChartContainer> */}
-       <ChartContainer config={chartConfig} className="min-h-[450px] w-full">
+       <ChartContainer config={chartConfig} className="md:min-h-[200px] lg:min-h-[300px] w-full">
       <BarChart accessibilityLayer data={chartData}>
-        <CartesianGrid vertical={false} />
+        <CartesianGrid vertical={true} />
         <XAxis
           dataKey="month"
-          tickLine={false}
+          tickLine={true}
           tickMargin={10}
-          axisLine={false}
+          axisLine={true}
           tickFormatter={(value) => value.slice(0, 3)}
         />
         <ChartTooltip content={<ChartTooltipContent />} />

@@ -11,14 +11,4 @@ const MenuLinks = () => {
   );
 };
 
-// const DirectLinks = () => {
-//   return (
-//     <div className="flex gap-2">
-//       {directLinks.map((item, i) => (
-//         <Button>{item.name}</Button>
-//       ))}
-//     </div>
-//   );
-// };
-
 export default MenuLinks;

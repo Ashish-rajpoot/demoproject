@@ -1,7 +1,7 @@
 export interface Item {
-  title: string;
+  title: string,
   subLinks?: {
-    title?: string;
-    links?: string[];
+    links?: {
+    }[];
   };
 }

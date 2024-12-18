@@ -1,16 +1,28 @@
+import { useState } from "react";
 import NavPage from "./NavPage";
 import RoutePage from "./RoutePage";
+import { HomeContext } from "@/useContext/Context";
+import { User } from "@/interface/User.interface";
 
-const HomePage = () => {
+
+interface DemoProps {}
+const HomePage = ({}: DemoProps) => {
+  const [user] = useState<User>({
+    isSubscribed: true,
+    name: "Message form HomePage!!!",
+  });
+
   return (
-    <div className="relative">
-      <div>
-        <NavPage />
+    <HomeContext.Provider value={user}>
+      <div className="relative">
+        <div>
+          <NavPage />
+        </div>
+        <div className="flex justify-center items-center h-[80vh]">
+          <RoutePage />
+        </div>
       </div>
-      <div className="flex justify-center items-center h-[80vh]">
-        <RoutePage />
-      </div>
-    </div>
+    </HomeContext.Provider>
   );
 };
 
