@@ -3,8 +3,7 @@ import {
   MenubarContent,
   MenubarItem,
   MenubarMenu,
-  MenubarShortcut,
-  MenubarTrigger,
+  MenubarTrigger
 } from "@/components/ui/menubar";
 import { MenubarPageProps } from "@/interface/MenubarPageProps.interface";
 import { Link } from "react-router-dom";
