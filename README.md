@@ -140,3 +140,4 @@ ReferenceError: require is not defined
 ### Solution is 
 import tailwindAnimate from 'tailwindcss-animate'
   plugins: [tailwindAnimate],
+

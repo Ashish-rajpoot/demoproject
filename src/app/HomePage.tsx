@@ -1,4 +1,3 @@
-import CardPage from "./CardPage";
 import NavPage from "./NavPage";
 import RoutePage from "./RoutePage";
 

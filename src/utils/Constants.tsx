@@ -9,13 +9,13 @@ export const Item = [
       links: ["shoes", "jacket", "toys","chartpage"],
     },
   },
-  // {
-  //   title: "Women",
-  //   subLinks: {
-  //     title: "t-shirt",
-  //     links: ["shoes", "jacket", "toys"],
-  //   },
-  // },
+  {
+    title: "Components",
+    subLinks: {
+      title: "chartpage",
+      links: ["datatable","chartpage"],
+    },
+  },
   // {
   //   title: "Kitchen",
   //   subLinks: {
