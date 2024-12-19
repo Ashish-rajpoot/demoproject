@@ -9,7 +9,6 @@ import { MenubarPageProps } from "@/interface/MenubarPageProps.interface";
 import { Link } from "react-router-dom";
 
 const MenubarPage: React.FC<MenubarPageProps> = ({ Item }) => {
-  console.log(Item);
   return (
     <Menubar>
       <MenubarMenu>

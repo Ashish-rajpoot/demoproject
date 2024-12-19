@@ -8,11 +8,11 @@ const RoutePage = () => {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Index />} />
-        <Route path="/popover" element={<PopOverPage />} />
-        <Route path="/chartpage" element={<ChartPage />} />
-        <Route path="/calender" element={<CalenderPage />} />
-        <Route path="/datatable" element={<DataTableDemo />} />
+          <Route path="/" element={<Index />} />
+          <Route path="/popover" element={<PopOverPage />} />
+          <Route path="/chartpage" element={<ChartPage />} />
+          <Route path="/calender" element={<CalenderPage />} />
+          <Route path="/datatable" element={<DataTableDemo />} />
       </Routes>
     </div>
   );

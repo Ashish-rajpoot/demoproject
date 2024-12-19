@@ -141,3 +141,8 @@ ReferenceError: require is not defined
 import tailwindAnimate from 'tailwindcss-animate'
   plugins: [tailwindAnimate],
 
+
+
+# Bootstrap
+npm i --save bootstrap @popperjs/core
+npm i --save-dev sass

@@ -1,8 +1,8 @@
+import { User } from "@/interface/User.interface";
+import { HomeContext } from "@/useContext/Context";
 import { useState } from "react";
 import NavPage from "./NavPage";
 import RoutePage from "./RoutePage";
-import { HomeContext } from "@/useContext/Context";
-import { User } from "@/interface/User.interface";
 
 
 interface DemoProps {}
@@ -18,7 +18,7 @@ const HomePage = ({}: DemoProps) => {
         <div>
           <NavPage />
         </div>
-        <div className="flex justify-center items-center h-[80vh]">
+        <div className="flex justify-center items-center min-h-fit absolute">
           <RoutePage />
         </div>
       </div>

@@ -56,27 +56,27 @@ export const sidebarItems = [
   },
   {
     title: "Inbox",
-    url: "#",
+    url: "",
     icon: Inbox,
   },
   {
     title: "Calendar",
-    url: "calender",
+    url: "",
     icon: Calendar,
   },
   {
     title: "Search",
-    url: "#",
+    url: "",
     icon: Search,
   },
   {
     title: "Settings",
-    url: "#",
+    url: "",
     icon: Settings,
   },
   {
     title: "Open PopOver",
-    url: "popover",
+    url: "",
     icon: Popcorn,
   },
 ];
