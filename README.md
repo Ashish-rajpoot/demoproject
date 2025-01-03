@@ -48,6 +48,7 @@ plugins: [],
 
 # Replace this code to tsconfig.app.json
 
+    /* Bundler mode */
 {
 "compilerOptions": {
 "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
