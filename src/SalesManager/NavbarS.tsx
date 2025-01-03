@@ -3,9 +3,23 @@ import { Input } from "@/components/ui/input";
 import { FaShoppingBag } from "react-icons/fa";
 import { IoIosAdd } from "react-icons/io";
 import { ModeToggle } from "./darkmode/mode-toggle";
-const NavbarS = () => {
+import { Dispatch, SetStateAction, useState } from "react";
+import { SalesFormDialog } from "./salesForm/SalesFormDialog";
+const NavbarS = ({
+  setSearchQuery,
+  searchQuery,
+}: {
+  setSearchQuery: Dispatch<SetStateAction<string>>;
+  searchQuery: string;
+}) => {
+  const [isOpen,setIsOpen] = useState(true)
+  const handleSalesForm=()=>{
+    setIsOpen(!isOpen)
+  }
   return (
-    <div className={`relative w-full h-20 overflow-hidden flex justify-between items-center border-b px-6 rounded-2xl gap-2 shadow-sm`}>
+    <div
+      className={`relative w-full h-20 overflow-hidden flex justify-between items-center border-b px-6 rounded-2xl gap-2 shadow-sm`}
+    >
       <header className="flex items-center gap-2 top-8 left-10">
         <div className="size-10 bg-primary rounded-md flex justify-center items-center">
           <FaShoppingBag
@@ -19,14 +33,21 @@ const NavbarS = () => {
       </header>
       <div className="flex gap-3 items-center">
         <div className="flex relative items-center gap-3  max-sm:w-[250px] rounded-lg">
-          <Input type="text" placeholder="search..." className="h-10 rounded-lg  cursor-pointer " />
+          <Input
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            type="text"
+            placeholder="search..."
+            className="h-10 rounded-lg  cursor-pointer "
+          />
           <div className="absolute right-[4px] h-[31px]">
-            <Button className="h-8 bg-primary">
+            <Button className="h-8 bg-primary" onClick={()=>handleSalesForm()}>
               <IoIosAdd className="text-3xl" />
             </Button>
+              {isOpen && <SalesFormDialog isOpen={isOpen} setIsOpen={setIsOpen}/>}
           </div>
         </div>
-          <ModeToggle/>
+        <ModeToggle />
       </div>
     </div>
   );

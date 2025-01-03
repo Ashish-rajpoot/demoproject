@@ -30,7 +30,7 @@ import {
   
     // Generate a range of visible page numbers around the current page (e.g., 5 pages)
     const visiblePages = useMemo(() => {
-      const maxVisiblePages = 5;
+      const maxVisiblePages = 3;
       const pages = [];
       let startPage = Math.max(page - Math.floor(maxVisiblePages / 2), 1);
       let endPage = Math.min(startPage + maxVisiblePages - 1, totalPages);
@@ -49,10 +49,10 @@ import {
     }, [page, totalPages]);
   
     return (
-      <div className="flex max-md:flex-col max-md:gap-4 justify-center items-center">
-        <div>{`Selected Page: ${page} / ${totalPages}`}</div>
+      <div className="flex max-md:flex-col max-md:gap-4 gap-6 justify-center items-center">
+        <div className="">{`Selected Page: ${page} / ${totalPages}`}</div>
         <SelectScrollable /> {/* Select items per page */}
-        <Pagination>
+        <Pagination className="flex max-md:gap-0">
           <PaginationContent>
             {/* Previous Page */}
             <PaginationItem>
