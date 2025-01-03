@@ -47,16 +47,17 @@ plugins: [],
 }
 
 # Replace this code to tsconfig.app.json
+***Start***
 
     /* Bundler mode */
-{
-"compilerOptions": {
-"tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
-"target": "ES2020",
-"useDefineForClassFields": true,
-"lib": ["ES2020", "DOM", "DOM.Iterable"],
-"module": "ESNext",
-"skipLibCheck": true,
+  {
+    "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -86,7 +87,7 @@ plugins: [],
 },
 "include": ["src"]
 }
-
+ ***End***
 # Update vite.config.ts
 npm install -D @types/node
 
@@ -123,6 +124,7 @@ You may now add components.
 
 
 # You can now start adding components to your project.
+```sh
 npx shadcn@latest add button
 npx shadcn@latest add sidebar
 npx shadcn@latest add menubar
@@ -132,7 +134,7 @@ npx shadcn@latest add carousel
 npx shadcn@latest add card
 
 npm install react-router-dom@6
-
+```
 # Error may encounter
 plugins: [require("tailwindcss-animate")],
           ^
