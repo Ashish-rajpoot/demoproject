@@ -1,8 +1,7 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import NavbarS from "./NavbarS";
 import StateCards from "./StateCards";
 import TableArea from "./TableArea/TableArea";
-import { SalesFormDialog } from "./salesForm/SalesFormDialog";
 
 export const Index = () => {
   const [searchQuery, setSearchQuery] = useState("");

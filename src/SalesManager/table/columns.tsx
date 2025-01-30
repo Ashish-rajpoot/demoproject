@@ -52,7 +52,7 @@ export const columns: ColumnDef<SalesPerson>[] = [
     id: "id",
     accessorKey: "id",
     header: "",
-    cell: ({ row }) => <div className="w-0 hidden"></div>,
+    cell: () => <div className="w-0 hidden"></div>,
     enableSorting: false,
     enableHiding: false,
     enablePinning: false,

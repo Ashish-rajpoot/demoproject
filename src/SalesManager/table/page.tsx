@@ -27,7 +27,7 @@ async function getFetchedData(priority: string): Promise<SalesPerson[]> {
 
 export default function DemoPage({ priority,searchQuery }: { priority: string,searchQuery:string }) {
   const [data, setData] = useState<SalesPerson[]>([]);
-  const [getDataToDelete, setDataToDelete] = useDeleteContext();
+  const [getDataToDelete] = useDeleteContext();
   useEffect(() => {
     console.log(getDataToDelete);
     setData(data.filter((item) => item.id !== getDataToDelete));

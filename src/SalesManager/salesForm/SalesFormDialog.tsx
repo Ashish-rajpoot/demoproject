@@ -7,7 +7,7 @@ import {
   DialogHeader,
   DialogTitle
 } from "@/components/ui/dialog";
-import { Dispatch, SetStateAction, useState } from "react";
+import { Dispatch, SetStateAction } from "react";
 
 export function SalesFormDialog({
   isOpen,
@@ -16,8 +16,6 @@ export function SalesFormDialog({
   isOpen: boolean;
   setIsOpen: Dispatch<SetStateAction<boolean>>;
 }) {
-  const [getName, setName] = useState("");
-  const [getUserName, setUserName] = useState("");
 
   return (
     
